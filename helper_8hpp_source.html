@@ -74,14 +74,27 @@ $(function() {
 <a href="helper_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HELPER_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HELPER_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespacematrix.html">    6</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacematrix.html">matrix</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// HELPER_H</span></div>
-<div class="ttc" id="anamespacematrix_html"><div class="ttname"><a href="namespacematrix.html">matrix</a></div><div class="ttdef"><b>Definition:</b> helper.hpp:6</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespacematrix.html">    7</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacematrix.html">matrix</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structmatrix_1_1Point.html">    8</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmatrix_1_1Point.html">Point</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structmatrix_1_1Point.html#a35051444e0491ea626a2ef7c54bee912">    9</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="structmatrix_1_1Point.html#a35051444e0491ea626a2ef7c54bee912">x1</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structmatrix_1_1Point.html#a6ac4e018e57b319ef08e2c52e42b4d23">   10</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="structmatrix_1_1Point.html#a6ac4e018e57b319ef08e2c52e42b4d23">x2</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structmatrix_1_1Point.html#a46cab9d4d54d8402ddc5dde67bb4b144">   12</a></span>&#160;        <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="structmatrix_1_1Point.html#a46cab9d4d54d8402ddc5dde67bb4b144">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="structmatrix_1_1Point.html">Point</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="structmatrix_1_1Point.html">Point</a>&amp; rhs) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="keywordflow">return</span> std::tie(lhs.<a class="code" href="structmatrix_1_1Point.html#a35051444e0491ea626a2ef7c54bee912">x1</a>, lhs.<a class="code" href="structmatrix_1_1Point.html#a6ac4e018e57b319ef08e2c52e42b4d23">x2</a>) </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                &lt; std::tie(rhs.<a class="code" href="structmatrix_1_1Point.html#a35051444e0491ea626a2ef7c54bee912">x1</a>, rhs.<a class="code" href="structmatrix_1_1Point.html#a6ac4e018e57b319ef08e2c52e42b4d23">x2</a>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    };</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// HELPER_H</span></div>
+<div class="ttc" id="anamespacematrix_html"><div class="ttname"><a href="namespacematrix.html">matrix</a></div><div class="ttdef"><b>Definition:</b> helper.hpp:7</div></div>
+<div class="ttc" id="astructmatrix_1_1Point_html"><div class="ttname"><a href="structmatrix_1_1Point.html">matrix::Point</a></div><div class="ttdef"><b>Definition:</b> helper.hpp:8</div></div>
+<div class="ttc" id="astructmatrix_1_1Point_html_a35051444e0491ea626a2ef7c54bee912"><div class="ttname"><a href="structmatrix_1_1Point.html#a35051444e0491ea626a2ef7c54bee912">matrix::Point::x1</a></div><div class="ttdeci">size_t x1</div><div class="ttdef"><b>Definition:</b> helper.hpp:9</div></div>
+<div class="ttc" id="astructmatrix_1_1Point_html_a46cab9d4d54d8402ddc5dde67bb4b144"><div class="ttname"><a href="structmatrix_1_1Point.html#a46cab9d4d54d8402ddc5dde67bb4b144">matrix::Point::operator&lt;</a></div><div class="ttdeci">friend bool operator&lt;(const Point &amp;lhs, const Point &amp;rhs)</div><div class="ttdef"><b>Definition:</b> helper.hpp:12</div></div>
+<div class="ttc" id="astructmatrix_1_1Point_html_a6ac4e018e57b319ef08e2c52e42b4d23"><div class="ttname"><a href="structmatrix_1_1Point.html#a6ac4e018e57b319ef08e2c52e42b4d23">matrix::Point::x2</a></div><div class="ttdeci">size_t x2</div><div class="ttdef"><b>Definition:</b> helper.hpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

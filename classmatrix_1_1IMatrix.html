@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>infinite_matrix: Шаблон класса matrix::IMatrix&lt; T, N &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">infinite_matrix
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">2-мерная разреженная бесконечная матрица, которая хранит только занятые элементы</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacematrix.html">matrix</a></li><li class="navelem"><a class="el" href="classmatrix_1_1IMatrix.html">IMatrix</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="classmatrix_1_1IMatrix-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Шаблон класса matrix::IMatrix&lt; T, N &gt;<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="matrix__DELETE_8hpp_source.html">matrix_DELETE.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:matrix::IMatrix&lt; T, N &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmatrix_1_1IMatrix__inherit__graph.png" border="0" usemap="#amatrix_1_1IMatrix_3_01T_00_01N_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="amatrix_1_1IMatrix_3_01T_00_01N_01_4_inherit__map" id="amatrix_1_1IMatrix_3_01T_00_01N_01_4_inherit__map">
+<area shape="rect" title=" " alt="" coords="105,5,279,32"/>
+<area shape="rect" href="classmatrix_1_1PMatrix.html" title=" " alt="" coords="5,80,184,107"/>
+<area shape="rect" href="classmatrix_1_1PMatrix.html" title=" " alt="" coords="209,80,370,107"/>
+<area shape="rect" href="classmatrix_1_1Matrix.html" title=" " alt="" coords="18,155,171,181"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:ac7d2c7ee5aecee546ff6f9c47988285a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1IMatrix.html#ac7d2c7ee5aecee546ff6f9c47988285a">data_t</a> = std::map&lt; <a class="el" href="structmatrix_1_1Point.html">Point</a>, T &gt;</td></tr>
+<tr class="separator:ac7d2c7ee5aecee546ff6f9c47988285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a903a8b0dc3992ca1424e3687ba43f867"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1IMatrix.html#a903a8b0dc3992ca1424e3687ba43f867">dataPtr_t</a> = std::unique_ptr&lt; <a class="el" href="classmatrix_1_1IMatrix.html#ac7d2c7ee5aecee546ff6f9c47988285a">data_t</a> &gt;</td></tr>
+<tr class="separator:a903a8b0dc3992ca1424e3687ba43f867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358763a371ff94701146271fb09e8541"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1IMatrix.html#a358763a371ff94701146271fb09e8541">xs_t</a> = std::vector&lt; size_t &gt;</td></tr>
+<tr class="separator:a358763a371ff94701146271fb09e8541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a747c69690eb42076fc43169f4a364fb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1IMatrix.html#a747c69690eb42076fc43169f4a364fb2">IMatrix</a> ()=delete</td></tr>
+<tr class="separator:a747c69690eb42076fc43169f4a364fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6487ed58f50c4d45ddd274d16790847"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1IMatrix.html#ae6487ed58f50c4d45ddd274d16790847">IMatrix</a> (<a class="el" href="classmatrix_1_1IMatrix.html#a903a8b0dc3992ca1424e3687ba43f867">dataPtr_t</a> data, <a class="el" href="classmatrix_1_1IMatrix.html#a358763a371ff94701146271fb09e8541">xs_t</a> &amp;&amp;xs)</td></tr>
+<tr class="separator:ae6487ed58f50c4d45ddd274d16790847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c67a6390786096991e73fe508492bf6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmatrix_1_1IMatrix.html">IMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1IMatrix.html#a4c67a6390786096991e73fe508492bf6">operator[]</a> (size_t xi)=0</td></tr>
+<tr class="separator:a4c67a6390786096991e73fe508492bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:ae9ec61cff384b3d1e74357ccfa6c5d30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmatrix_1_1IMatrix.html#a903a8b0dc3992ca1424e3687ba43f867">dataPtr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1IMatrix.html#ae9ec61cff384b3d1e74357ccfa6c5d30">_data</a></td></tr>
+<tr class="separator:ae9ec61cff384b3d1e74357ccfa6c5d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0473d480830a414ce02195ec9ca4da90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmatrix_1_1IMatrix.html#a358763a371ff94701146271fb09e8541">xs_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1IMatrix.html#a0473d480830a414ce02195ec9ca4da90">_xs</a></td></tr>
+<tr class="separator:a0473d480830a414ce02195ec9ca4da90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Определения типов</h2>
+<a id="ac7d2c7ee5aecee546ff6f9c47988285a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d2c7ee5aecee546ff6f9c47988285a">&#9670;&nbsp;</a></span>data_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmatrix_1_1IMatrix.html">matrix::IMatrix</a>&lt; T, N &gt;::<a class="el" href="classmatrix_1_1IMatrix.html#ac7d2c7ee5aecee546ff6f9c47988285a">data_t</a> =  std::map&lt;<a class="el" href="structmatrix_1_1Point.html">Point</a>, T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a903a8b0dc3992ca1424e3687ba43f867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a903a8b0dc3992ca1424e3687ba43f867">&#9670;&nbsp;</a></span>dataPtr_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmatrix_1_1IMatrix.html">matrix::IMatrix</a>&lt; T, N &gt;::<a class="el" href="classmatrix_1_1IMatrix.html#a903a8b0dc3992ca1424e3687ba43f867">dataPtr_t</a> =  std::unique_ptr&lt;<a class="el" href="classmatrix_1_1IMatrix.html#ac7d2c7ee5aecee546ff6f9c47988285a">data_t</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a358763a371ff94701146271fb09e8541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358763a371ff94701146271fb09e8541">&#9670;&nbsp;</a></span>xs_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmatrix_1_1IMatrix.html">matrix::IMatrix</a>&lt; T, N &gt;::<a class="el" href="classmatrix_1_1IMatrix.html#a358763a371ff94701146271fb09e8541">xs_t</a> =  std::vector&lt;size_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a747c69690eb42076fc43169f4a364fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747c69690eb42076fc43169f4a364fb2">&#9670;&nbsp;</a></span>IMatrix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmatrix_1_1IMatrix.html">matrix::IMatrix</a>&lt; T, N &gt;::<a class="el" href="classmatrix_1_1IMatrix.html">IMatrix</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6487ed58f50c4d45ddd274d16790847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6487ed58f50c4d45ddd274d16790847">&#9670;&nbsp;</a></span>IMatrix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmatrix_1_1IMatrix.html">matrix::IMatrix</a>&lt; T, N &gt;::<a class="el" href="classmatrix_1_1IMatrix.html">IMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmatrix_1_1IMatrix.html#a903a8b0dc3992ca1424e3687ba43f867">dataPtr_t</a>&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmatrix_1_1IMatrix.html#a358763a371ff94701146271fb09e8541">xs_t</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>xs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a4c67a6390786096991e73fe508492bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c67a6390786096991e73fe508492bf6">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classmatrix_1_1IMatrix.html">IMatrix</a>&amp; <a class="el" href="classmatrix_1_1IMatrix.html">matrix::IMatrix</a>&lt; T, N &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>xi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="classmatrix_1_1Matrix.html#a2fe636ddf6389f914b3ce8efdd696820">matrix::Matrix&lt; T &gt;</a>, <a class="el" href="classmatrix_1_1PMatrix.html#a0c617697ea424e9fd21c8008841c6eb5">matrix::PMatrix&lt; T &gt;</a>, <a class="el" href="classmatrix_1_1PMatrix.html#a0c617697ea424e9fd21c8008841c6eb5">matrix::PMatrix&lt; T, N &gt;</a>, <a class="el" href="classmatrix_1_1Matrix.html#a0e9239c128549235af17770bc4996538">matrix::Matrix&lt; T &gt;</a>, <a class="el" href="classmatrix_1_1PMatrix.html#aae789997dd3fb3cc954acf1b3f4a1981">matrix::PMatrix&lt; T &gt;</a> и <a class="el" href="classmatrix_1_1PMatrix.html#aae789997dd3fb3cc954acf1b3f4a1981">matrix::PMatrix&lt; T, N &gt;</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ae9ec61cff384b3d1e74357ccfa6c5d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ec61cff384b3d1e74357ccfa6c5d30">&#9670;&nbsp;</a></span>_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmatrix_1_1IMatrix.html#a903a8b0dc3992ca1424e3687ba43f867">dataPtr_t</a> <a class="el" href="classmatrix_1_1IMatrix.html">matrix::IMatrix</a>&lt; T, N &gt;::_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0473d480830a414ce02195ec9ca4da90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0473d480830a414ce02195ec9ca4da90">&#9670;&nbsp;</a></span>_xs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmatrix_1_1IMatrix.html#a358763a371ff94701146271fb09e8541">xs_t</a> <a class="el" href="classmatrix_1_1IMatrix.html">matrix::IMatrix</a>&lt; T, N &gt;::_xs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>libs/InfiniteMatrix/include/<a class="el" href="matrix__DELETE_8hpp_source.html">matrix_DELETE.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
