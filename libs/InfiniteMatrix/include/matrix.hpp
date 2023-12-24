@@ -1,10 +1,7 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
-#include <cstddef>
-#include <cassert>
 #include <iostream>
-#include <vector>
 #include <map>
 #include <memory>
 
