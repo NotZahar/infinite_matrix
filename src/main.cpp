@@ -1,30 +1,35 @@
-#include <iostream>
+#include <ranges>
 
 #include <matrix.hpp>
 
-#define THROW_IF(expr, msg) if(expr) { std::cout << msg << std::endl; throw; }
-
 int main(int, char**) {
     matrix::Matrix<int> matrix;
-    std::cout << matrix.size() << std::endl;
-    // THROW_IF(matrix.size() != 0, "matrix.size() != 0");
-
-    auto a = matrix[0][0];
-    std::cout << a << "\n";
-    // THROW_IF(a != int(), "a != int()");
-    // THROW_IF(matrix.size() != 0, "13, matrix.size() != 0");
-
-    // matrix[{100, 100}] = 314;
-    // if(matrix[{100, 100}] != 314) {
-    //     std::cout << "matrix[{100, 100}] != 314" << std::endl;
-    //     throw;
-    // }
-    // THROW_IF(matrix.size() != 1, "matrix.size() != 1");
-    // // выведется одна строка
-    // // 100100314
-    // for (auto it = matrix.cbegin(); it != matrix.cend(); ++it) {
-    //     std::cout << it->first.x << " " << it->first.y << " " << it->second << std::endl;
-    // }
     
+    // При запуске программы необходимо создать матрицу с пустым значением 0, заполнить главную
+    // диагональ матрицы (от [0,0] до [9,9]) значениями от 0 до 9.
+    for (auto i : std::ranges::iota_view{0, 10})
+        matrix[i][i] = i;
+
+    // Второстепенную диагональ (от [0,9] до [9,0]) значениями от 9 до 0.
+    for (int j = 9; auto i : std::ranges::iota_view{0, 10}) {
+        matrix[i][j] = j;
+        --j;
+    }
+
+    // Необходимо вывести фрагмент матрицы от [1,1] до [8,8]. Между столбцами пробел. Каждая строка
+    // матрицы на новой строке консоли.
+    for (int i = 1; i < 9; ++i) {
+        for (int j = 1; j < 9; ++j)
+            std::cout << matrix[i][j] << ' ';
+        std::cout << '\n';
+    }
+
+    // Вывести количество занятых ячеек.
+    std::cout << "Количество занятых ячеек: " << matrix.size() << '\n';
+
+    // Вывести все занятые ячейки вместе со своими позициями.
+    for (auto it = matrix.cbegin(); it != matrix.cend(); ++it)
+        std::cout << "[" << it->first.x1 << ", " << it->first.x2 << "]: " << it->second << '\n';
+
     return 0;
 }
