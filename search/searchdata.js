@@ -1,15 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "2_dhimoprstx",
-  1: "imp",
+  0: "2chimoprstx",
+  1: "mp",
   2: "m",
   3: "himr",
-  4: "imopst",
-  5: "_x",
-  6: "dmpx",
-  7: "o",
-  8: "t",
-  9: "2"
+  4: "cmopst",
+  5: "x",
+  6: "o",
+  7: "2"
 };
 
 var indexSectionNames =
@@ -20,10 +18,8 @@ var indexSectionNames =
   3: "files",
   4: "functions",
   5: "variables",
-  6: "typedefs",
-  7: "related",
-  8: "defines",
-  9: "pages"
+  6: "related",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -34,9 +30,7 @@ var indexSectionLabels =
   3: "Файлы",
   4: "Функции",
   5: "Переменные",
-  6: "Определения типов",
-  7: "Друзья",
-  8: "Макросы",
-  9: "Страницы"
+  6: "Друзья",
+  7: "Страницы"
 };
 

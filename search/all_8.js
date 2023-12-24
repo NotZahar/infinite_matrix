@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_2emd_24',['README.md',['../README_8md.html',1,'']]]
+  ['size_18',['size',['../classmatrix_1_1Matrix.html#a93e3eb146671caa541e32266f276f871',1,'matrix::Matrix']]]
 ];

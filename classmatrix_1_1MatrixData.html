@@ -81,8 +81,8 @@ $(function() {
 Открытые члены</h2></td></tr>
 <tr class="memitem:a58a707d568b1aeade73c825b5733d0eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1MatrixData.html#a58a707d568b1aeade73c825b5733d0eb">MatrixData</a> ()=delete</td></tr>
 <tr class="separator:a58a707d568b1aeade73c825b5733d0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd506fe21019b81752cb7ab36ffab3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1MatrixData.html#aebd506fe21019b81752cb7ab36ffab3b">MatrixData</a> (std::shared_ptr&lt; std::map&lt; <a class="el" href="structmatrix_1_1Point.html">Point</a>, <a class="el" href="classmatrix_1_1MatrixData.html">MatrixData</a>&lt; T &gt;&gt;&gt; matrix)</td></tr>
-<tr class="separator:aebd506fe21019b81752cb7ab36ffab3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7d407826a6bde3f542d64b0635c40f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1MatrixData.html#aeb7d407826a6bde3f542d64b0635c40f">MatrixData</a> (size_t row, size_t column, std::weak_ptr&lt; std::map&lt; <a class="el" href="structmatrix_1_1Point.html">Point</a>, <a class="el" href="classmatrix_1_1MatrixData.html">MatrixData</a>&lt; T &gt;&gt;&gt; matrix, T data=T())</td></tr>
+<tr class="separator:aeb7d407826a6bde3f542d64b0635c40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabdf899623f64a5fa401fab0cfa43298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmatrix_1_1MatrixData.html">MatrixData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1MatrixData.html#aabdf899623f64a5fa401fab0cfa43298">operator=</a> (T value)</td></tr>
 <tr class="separator:aabdf899623f64a5fa401fab0cfa43298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e41b0935c76f5e8e2e745ade7102d8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix_1_1MatrixData.html#a3e41b0935c76f5e8e2e745ade7102d8a">operator T</a> () const</td></tr>
@@ -116,8 +116,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="aebd506fe21019b81752cb7ab36ffab3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebd506fe21019b81752cb7ab36ffab3b">&#9670;&nbsp;</a></span>MatrixData() <span class="overload">[2/2]</span></h2>
+<a id="aeb7d407826a6bde3f542d64b0635c40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb7d407826a6bde3f542d64b0635c40f">&#9670;&nbsp;</a></span>MatrixData() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,9 +130,31 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classmatrix_1_1MatrixData.html">matrix::MatrixData</a>&lt; T &gt;::<a class="el" href="classmatrix_1_1MatrixData.html">MatrixData</a> </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; std::map&lt; <a class="el" href="structmatrix_1_1Point.html">Point</a>, <a class="el" href="classmatrix_1_1MatrixData.html">MatrixData</a>&lt; T &gt;&gt;&gt;&#160;</td>
-          <td class="paramname"><em>matrix</em></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>column</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::weak_ptr&lt; std::map&lt; <a class="el" href="structmatrix_1_1Point.html">Point</a>, <a class="el" href="classmatrix_1_1MatrixData.html">MatrixData</a>&lt; T &gt;&gt;&gt;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>data</em> = <code>T()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>

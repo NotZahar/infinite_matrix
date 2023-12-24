@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_5fdata_1',['_data',['../classmatrix_1_1IMatrix.html#ae9ec61cff384b3d1e74357ccfa6c5d30',1,'matrix::IMatrix']]],
-  ['_5fxs_2',['_xs',['../classmatrix_1_1IMatrix.html#a0473d480830a414ce02195ec9ca4da90',1,'matrix::IMatrix']]]
+  ['cbegin_1',['cbegin',['../classmatrix_1_1Matrix.html#aeba26d3fcbf8032ac216548baf8b4382',1,'matrix::Matrix']]],
+  ['cend_2',['cend',['../classmatrix_1_1Matrix.html#a2d5f68b632c27dcbf73d71a3359d2d3c',1,'matrix::Matrix']]]
 ];
